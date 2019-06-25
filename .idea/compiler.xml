@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="config-server" />
         <module name="eureka-server" />
+        <module name="ribbon-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

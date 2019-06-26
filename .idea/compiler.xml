@@ -11,6 +11,7 @@
         <module name="produce1-server" />
         <module name="produce2-server" />
         <module name="ribbon-server" />
+        <module name="zuul-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="config-server" />
         <module name="eureka-server" />
+        <module name="produce1-server" />
+        <module name="produce2-server" />
         <module name="ribbon-server" />
       </profile>
     </annotationProcessing>

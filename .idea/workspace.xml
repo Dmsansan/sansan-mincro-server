@@ -2,14 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0b81c2b-c601-458a-923b-ad59013b87f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ribbon-server/src/main/java/server/ribbon/route/RouteTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ribbon-server/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/produce1-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/produce1-server/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/produce1-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/produce1-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/produce1-server/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/produce1-server/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/produce1-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/produce1-server/produce1-server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/produce1-server/src/main/java/com/sansan/server/Produce1ServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/produce1-server/src/main/java/com/sansan/server/user/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/produce1-server/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/produce1-server/src/test/java/com/sansan/server/Produce1ServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/produce2-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/produce2-server/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/produce2-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/produce2-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/produce2-server/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/produce2-server/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/produce2-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/produce2-server/produce2-server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/produce2-server/src/main/java/com/sansan/server/Produce2ServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/produce2-server/src/main/java/com/sansan/server/user/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/produce2-server/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/produce2-server/src/test/java/com/sansan/server/Produce2ServerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ribbon-server/src/main/java/server/ribbon/RibbonServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-server/src/main/java/server/ribbon/RibbonServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ribbon-server/src/main/java/server/ribbon/route/RouteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-server/src/main/java/server/ribbon/route/RouteTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -17,6 +40,8 @@
     <ignored path="$PROJECT_DIR$/euraka-server/target/" />
     <ignored path="$PROJECT_DIR$/eureka-server/target/" />
     <ignored path="$PROJECT_DIR$/ribbon-server/target/" />
+    <ignored path="$PROJECT_DIR$/produce1-server/target/" />
+    <ignored path="$PROJECT_DIR$/produce2-server/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,45 +55,46 @@
     <session id="1804995442">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="9" />
-          <entry key="properties" value="6" />
+          <entry key="java" value="14" />
+          <entry key="properties" value="8" />
           <entry key="txt" value="5" />
-          <entry key="xml" value="7" />
+          <entry key="xml" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="9" />
+          <entry key="JAVA" value="14" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Properties" value="6" />
-          <entry key="XML" value="7" />
+          <entry key="Properties" value="8" />
+          <entry key="XML" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="82" />
-          <entry key="properties" value="853" />
-          <entry key="txt" value="59" />
+          <entry key="java" value="888" />
+          <entry key="properties" value="1066" />
+          <entry key="txt" value="90" />
           <entry key="xml" value="87" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="82" />
-          <entry key="PLAIN_TEXT" value="59" />
-          <entry key="Properties" value="853" />
+          <entry key="JAVA" value="888" />
+          <entry key="PLAIN_TEXT" value="90" />
+          <entry key="Properties" value="1066" />
           <entry key="XML" value="87" />
         </counts>
       </usages-collector>
@@ -76,33 +102,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ribbon-server/src/main/resources/banner.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ribbon-server/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eureka-server/src/main/resources/banner.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config-server/src/main/resources/banner.txt">
           <provider selected="true" editor-type-id="text-editor">
@@ -115,8 +114,92 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ribbon-server/src/main/java/server/ribbon/route/RouteTest.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/produce1-server/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/produce1-server/src/main/java/com/sansan/server/Produce1ServerApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/produce1-server/src/main/java/com/sansan/server/user/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#288#289#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/produce2-server/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/produce2-server/src/main/java/com/sansan/server/Produce2ServerApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
-              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/produce2-server/src/main/java/com/sansan/server/user/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#287#288#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/produce1-server/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ribbon-server/src/main/java/server/ribbon/RibbonServerApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+              <folding>
+                <element signature="e#700#701#0" expanded="true" />
+                <element signature="e#741#742#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -143,14 +226,21 @@
         <option value="$PROJECT_DIR$/config-server/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-server/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/config-server/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/ribbon-server/src/main/java/server/ribbon/route/RouteTest.java" />
-        <option value="$PROJECT_DIR$/ribbon-server/src/main/java/server/ribbon/RibbonServerApplication.java" />
         <option value="$PROJECT_DIR$/config-server/src/main/java/server/config/ConfigServerApplication.java" />
         <option value="$PROJECT_DIR$/ribbon-server/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/ribbon-server/pom.xml" />
         <option value="$PROJECT_DIR$/ribbon-server/src/main/resources/banner.txt" />
         <option value="$PROJECT_DIR$/eureka-server/src/main/resources/banner.txt" />
         <option value="$PROJECT_DIR$/config-server/src/main/resources/banner.txt" />
+        <option value="$PROJECT_DIR$/produce1-server/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/produce1-server/src/main/java/com/sansan/server/Produce1ServerApplication.java" />
+        <option value="$PROJECT_DIR$/produce1-server/src/main/java/com/sansan/server/user/UserController.java" />
+        <option value="$PROJECT_DIR$/produce2-server/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/produce2-server/src/main/java/com/sansan/server/user/Produce2ServerApplication.java" />
+        <option value="$PROJECT_DIR$/produce2-server/src/main/java/com/sansan/server/Produce2ServerApplication.java" />
+        <option value="$PROJECT_DIR$/produce2-server/src/main/java/com/sansan/server/user/UserController.java" />
+        <option value="$PROJECT_DIR$/ribbon-server/src/main/java/server/ribbon/RibbonServerApplication.java" />
+        <option value="$PROJECT_DIR$/ribbon-server/src/main/java/server/ribbon/route/RouteTest.java" />
       </list>
     </option>
   </component>
@@ -219,44 +309,12 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="sansanservcie" type="b2602c69:ProjectViewProjectNode" />
               <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansanservcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="config-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansanservcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansanservcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansanservcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansanservcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sansanservcie" type="b2602c69:ProjectViewProjectNode" />
@@ -303,18 +361,11 @@
               <item name="ribbon" type="462c0819:PsiDirectoryNode" />
               <item name="route" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="sansanservcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="CatdeaLogs" />
     </panes>
@@ -326,7 +377,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561429003313" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561528412083" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/config-server" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -337,6 +388,12 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\sansanservcie\produce1-server\src\main\java\com\sansan\server" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.sansan.server" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\sansanservcie\config-server\src\main\resources" />
       <recent name="D:\sansanservcie\eureka-server\src\main\resources" />
@@ -359,9 +416,9 @@
         </RuleState>
       </list>
     </option>
-    <option name="contentProportion" value="0.19783616" />
+    <option name="contentProportion" value="0.248068" />
   </component>
-  <component name="RunManager" selected="Spring Boot.RibbonServerApplication">
+  <component name="RunManager" selected="Spring Boot.Produce2ServerApplication">
     <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="config-server" />
       <extension name="coverage">
@@ -383,6 +440,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Produce1ServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="produce1-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sansan.server.Produce1ServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Produce2ServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="produce2-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sansan.server.Produce2ServerApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RibbonServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ribbon-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="server.ribbon.RibbonServerApplication" />
@@ -392,8 +464,10 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.EurekaServerApplication" />
-      <item itemvalue="Spring Boot.ConfigServerApplication" />
       <item itemvalue="Spring Boot.RibbonServerApplication" />
+      <item itemvalue="Spring Boot.Produce1ServerApplication" />
+      <item itemvalue="Spring Boot.Produce2ServerApplication" />
+      <item itemvalue="Spring Boot.ConfigServerApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -415,7 +489,8 @@
       <workItem from="1561353117143" duration="1021000" />
       <workItem from="1561354147516" duration="2938000" />
       <workItem from="1561357320640" duration="5909000" />
-      <workItem from="1561424857876" duration="4733000" />
+      <workItem from="1561424857876" duration="4785000" />
+      <workItem from="1561518094036" duration="3311000" />
     </task>
     <task id="LOCAL-00001" summary="添加config-server服务注册应用服务管理中心">
       <created>1561364727993</created>
@@ -431,11 +506,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561427322987</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="修改springBoot的启动banner预览图">
+      <created>1561430077077</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1561430077077</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14621000" />
+    <option name="totallyTimeSpent" value="17984000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -466,7 +548,7 @@
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" sideWeight="0.49924356" weight="0.7126246" />
       <window_info anchor="bottom" id="Application Servers" order="14" sideWeight="0.49924356" weight="0.37914693" />
       <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.505295" side_tool="true" weight="0.5648604" />
-      <window_info anchor="bottom" x="22" y="256" width="1322" height="216" id="Run Dashboard" order="16" sideWeight="0.494705" weight="0.5648604" />
+      <window_info anchor="bottom" x="22" y="256" width="1322" height="216" id="Run Dashboard" order="16" sideWeight="0.494705" weight="0.52545154" />
       <window_info anchor="bottom" id="JRebel Executor" order="17" />
       <window_info anchor="bottom" id="Problems" order="18" weight="0.3289689" />
       <window_info anchor="bottom" id="SVN Properties" order="19" weight="0.3289689" />
@@ -494,7 +576,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="添加config-server服务注册应用服务管理中心" />
     <MESSAGE value="添加负载均衡服务" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加负载均衡服务" />
+    <MESSAGE value="修改springBoot的启动banner预览图" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改springBoot的启动banner预览图" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -551,13 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-server/src/main/java/server/ribbon/RibbonServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ribbon-server/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="71">
@@ -600,10 +676,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-server/src/main/java/server/ribbon/route/RouteTest.java">
+    <entry file="file://$PROJECT_DIR$/produce1-server/src/main/java/com/sansan/server/Produce1ServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produce1-server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produce2-server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produce2-server/src/main/java/com/sansan/server/Produce2ServerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produce2-server/src/main/java/com/sansan/server/user/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produce1-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produce1-server/src/main/java/com/sansan/server/user/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#288#289#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-server/src/main/java/server/ribbon/RibbonServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding>
+            <element signature="e#700#701#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-server/src/main/java/server/ribbon/route/RouteTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
         </state>
       </provider>
     </entry>

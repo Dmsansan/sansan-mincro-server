@@ -11,6 +11,4 @@
     <modules>
         <module>config-server</module>
     </modules>
-
-
 </project>

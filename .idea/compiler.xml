@@ -14,9 +14,5 @@
         <module name="zuul-server" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="configserver" target="1.5" />
-      <module name="euraka-server" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

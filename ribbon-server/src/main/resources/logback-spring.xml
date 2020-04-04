@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+	<include resource="org/springframework/boot/logging/logback/base.xml"/>
+	<include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+	<jmxConfigurator />
+
+	<!--application.yml 传递参数，不能使用logback 自带的<property>标签 -->
+	<springProperty scope="context" name="logpath" source="logging.path"/>
+	<springProperty scope="context" name="logfile" source="logging.file"/>
+	<springProperty scope="context" name="appname" source="spring.application.name"/>
+	<springProperty scope="context" name="logLevel" source="logging.level" defaultValue="ERROR"/>
+
+	<property name="logFile" value="${logpath:-${user.home}/logs}/${appname}/${logfile:-spring}" />
+
+	<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+		<!-- 典型的日志pattern -->
+		<encoder>
+			<pattern>%date{HH:mm:ss.SSS} [%thread] %-5level %logger{36}:%line - %msg%n</pattern>
+			<charset>utf8</charset>
+		</encoder>
+	</appender>
+
+	<!-- 按时间滚动的策略 -->
+	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${logFile}.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${logFile}.%d{yyyy-MM-dd}.log</fileNamePattern>
+			<!-- 保留 30天数据，默认无限 -->
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%date{HH:mm:ss.SSS} [%thread] %-5level %logger{36}:%line - %msg%n</pattern>
+			<charset>utf8</charset>
+		</encoder>
+	</appender>
+
+	<root level="${logLevel}">
+		<appender-ref ref="CONSOLE" />
+		<appender-ref ref="FILE" />
+	</root>
+
+	<logger name="server.ribbon" level="DEBUG"/>
+</configuration>

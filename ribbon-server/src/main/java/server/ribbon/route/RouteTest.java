@@ -1,7 +1,7 @@
 package server.ribbon.route;
 
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,15 +14,10 @@ public class RouteTest {
     @Autowired
     private RestTemplate restTemplate;
 
-    @HystrixCommand(fallbackMethod = "hiError")
-    @RequestMapping(value = "/getUserInfo", method = RequestMethod.GET, produces = "application/json")
+    @RequestMapping(value = "/getUserInfo", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public String getUserInfo(){
-        String url = "http://PRODUCE-SERVER/user/getUserInfo";
+        String url = "http://produce-server/user/getUserInfo";
         String userInfo = restTemplate.getForObject(url, String.class);
         return userInfo;
-    }
-
-    public String hiError(){
-        return "request server error";
     }
 }

@@ -1,0 +1,2 @@
+13:40:01.818 [main] INFO  c.s.server.Produce1ServerApplication:646 - No active profile set, falling back to default profiles: default
+13:40:22.860 [main] INFO  c.s.server.Produce1ServerApplication:59 - Started Produce1ServerApplication in 33.635 seconds (JVM running for 49.165)

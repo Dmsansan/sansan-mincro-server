@@ -1,0 +1,2 @@
+2020-04-05 13:40:01.818  INFO 15980 --- [main] c.s.server.Produce1ServerApplication     : No active profile set, falling back to default profiles: default
+2020-04-05 13:40:22.860  INFO 15980 --- [main] c.s.server.Produce1ServerApplication     : Started Produce1ServerApplication in 33.635 seconds (JVM running for 49.165)

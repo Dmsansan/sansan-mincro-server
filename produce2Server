@@ -1,0 +1,2 @@
+2020-04-05 14:06:16.954  INFO 1528 --- [main] c.s.server.Produce2ServerApplication     : No active profile set, falling back to default profiles: default
+2020-04-05 14:06:34.585  INFO 1528 --- [main] c.s.server.Produce2ServerApplication     : Started Produce2ServerApplication in 27.722 seconds (JVM running for 46.228)

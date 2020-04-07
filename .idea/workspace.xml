@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b91b6d99-3a98-4c01-9b47-dea64bbecfab" name="Default Changelist" comment="1、处理eureka注册中心启动检索服务报错;&#10;2、在服务注册中心添加security安全组件。">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b91b6d99-3a98-4c01-9b47-dea64bbecfab" name="Default Changelist" comment="完善项目启动banner图描述信息">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/produce1-server/produce1-server.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/produce2-server/produce2-server.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ribbon-server/ribbon-server.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/config-server/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,138 +24,63 @@
     <session id="1804995442">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.64" value="1" />
+          <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="26" />
+          <entry key="class" value="1" />
+          <entry key="java" value="34" />
+          <entry key="js" value="1" />
+          <entry key="json" value="1" />
+          <entry key="lock" value="1" />
           <entry key="log" value="4" />
-          <entry key="properties" value="11" />
-          <entry key="txt" value="1" />
-          <entry key="xml" value="14" />
+          <entry key="md" value="2" />
+          <entry key="properties" value="14" />
+          <entry key="txt" value="8" />
+          <entry key="xml" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="26" />
+          <entry key="CLASS" value="1" />
+          <entry key="JAVA" value="34" />
+          <entry key="JSON" value="1" />
+          <entry key="JavaScript" value="1" />
           <entry key="Log" value="4" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Properties" value="11" />
-          <entry key="XML" value="14" />
+          <entry key="Markdown" value="2" />
+          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="Properties" value="14" />
+          <entry key="XML" value="19" />
+          <entry key="yarn.lock" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="761" />
-          <entry key="properties" value="681" />
-          <entry key="txt" value="482" />
-          <entry key="xml" value="237" />
+          <entry key="java" value="915" />
+          <entry key="properties" value="706" />
+          <entry key="txt" value="870" />
+          <entry key="xml" value="251" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="761" />
-          <entry key="PLAIN_TEXT" value="482" />
-          <entry key="Properties" value="681" />
-          <entry key="XML" value="237" />
+          <entry key="JAVA" value="915" />
+          <entry key="PLAIN_TEXT" value="870" />
+          <entry key="Properties" value="706" />
+          <entry key="XML" value="251" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ribbon-server/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="66" column="61" selection-start-line="66" selection-start-column="61" selection-end-line="66" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/produce2-server/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="76" selection-start-line="13" selection-start-column="76" selection-end-line="13" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/produce1-server/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/produce1-server/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="45" column="21" selection-start-line="42" selection-start-column="8" selection-end-line="45" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ribbon-server/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="19" selection-start-line="19" selection-end-line="20" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ribbon-server/src/main/java/server/ribbon/route/RouteTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="19" column="60" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ribbon-server/src/main/java/server/ribbon/config/WebSecurityConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logs/ribbon-server/ribbonServer.log">
-          <provider selected="true" editor-type-id="LogFileEditorProvider" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/produce2-server/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ribbon-server/src/main/java/server/ribbon/RibbonServerApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -194,11 +114,22 @@
         <option value="$PROJECT_DIR$/produce1-server/src/main/java/com/sansan/server/config/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/ribbon-server/src/main/java/server/ribbon/config/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/ribbon-server/src/main/resources/logback-spring.xml" />
-        <option value="$PROJECT_DIR$/ribbon-server/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/produce2-server/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/produce1-server/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/produce2-server/pom.xml" />
+        <option value="$PROJECT_DIR$/ribbon-server/src/main/java/server/ribbon/RibbonServerApplication.java" />
+        <option value="$PROJECT_DIR$/ribbon-server/src/main/java/server/ribbon/route/RouteTest.java" />
+        <option value="$PROJECT_DIR$/ribbon-server/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/zuul-server/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/ribbon-server/pom.xml" />
+        <option value="$PROJECT_DIR$/zuul-server/src/main/java/com/zuul/server/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/zuul-server/src/main/resources/logback-spring.xml" />
+        <option value="$PROJECT_DIR$/zuul-server/pom.xml" />
+        <option value="$PROJECT_DIR$/zuul-server/src/main/resources/banner.txt" />
+        <option value="$PROJECT_DIR$/ribbon-server/src/main/resources/banner.txt" />
+        <option value="$PROJECT_DIR$/produce2-server/src/main/resources/banner.txt" />
+        <option value="$PROJECT_DIR$/produce1-server/src/main/resources/banner.txt" />
+        <option value="$PROJECT_DIR$/eureka-server/src/main/resources/banner.txt" />
       </list>
     </option>
   </component>
@@ -228,6 +159,14 @@
       <expand />
       <select />
     </treeState>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/webapp/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/webapp/package.json" />
+    </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
@@ -266,9 +205,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="CatdeaLogs" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -276,241 +213,12 @@
               <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
               <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="produce1-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="produce1-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="produce1-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="produce1-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="produce2-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="produce2-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="produce2-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="produce2-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="produce2-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="produce2-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="produce2-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="produce2-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon" type="462c0819:PsiDirectoryNode" />
-              <item name="route" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sansan-servcie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sansanservcie" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -521,7 +229,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586008480292" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586240766194" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/zuul-server" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -533,13 +241,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zuul.server.config" />
       <recent name="server.ribbon.config" />
       <recent name="com.sansan.server.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\sansanservcie\ribbon-server\src\main\resources" />
+      <recent name="D:\sansanservcie\zuul-server\src\main\resources" />
       <recent name="D:\sansanservcie\produce2-server\src\main\resources" />
       <recent name="D:\sansanservcie\produce1-server\src\main\resources" />
+      <recent name="D:\sansanservcie\ribbon-server\src\main\resources" />
       <recent name="D:\sansanservcie\eureka-server\src\main\resources" />
     </key>
   </component>
@@ -561,7 +271,7 @@
     </option>
     <option name="contentProportion" value="0.23106647" />
   </component>
-  <component name="RunManager" selected="Spring Boot.RibbonServerApplication">
+  <component name="RunManager" selected="Spring Boot.ZuulServerApplication">
     <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="config-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="server.config.ConfigServerApplication" />
@@ -614,8 +324,8 @@
       <item itemvalue="Spring Boot.ConfigServerApplication" />
       <item itemvalue="Spring Boot.ZuulServerApplication" />
       <item itemvalue="Spring Boot.Produce2ServerApplication" />
-      <item itemvalue="Spring Boot.Produce1ServerApplication" />
       <item itemvalue="Spring Boot.RibbonServerApplication" />
+      <item itemvalue="Spring Boot.Produce1ServerApplication" />
       <item itemvalue="Spring Boot.EurekaServerApplication" />
     </list>
     <recent_temporary>
@@ -636,7 +346,9 @@
       <updated>1585792143138</updated>
       <workItem from="1585792146695" duration="12400000" />
       <workItem from="1585814674930" duration="5273000" />
-      <workItem from="1586004765211" duration="3620000" />
+      <workItem from="1586004765211" duration="3871000" />
+      <workItem from="1586064965359" duration="4856000" />
+      <workItem from="1586226215894" duration="5065000" />
     </task>
     <task id="LOCAL-00001" summary="1、处理eureka注册中心启动检索服务报错;&#10;2、在服务注册中心添加security安全组件。">
       <created>1585793695177</created>
@@ -687,17 +399,51 @@
       <option name="project" value="LOCAL" />
       <updated>1586008452584</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="删除idea项目配置文件">
+      <created>1586008520051</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586008520051</updated>
+    </task>
+    <task id="LOCAL-00009" summary="添加ribbon服务端负载均衡策略路由代码">
+      <created>1586066984397</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1586066984425</updated>
+    </task>
+    <task id="LOCAL-00010" summary="完善zuul-sever路由服务">
+      <created>1586068159619</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1586068159619</updated>
+    </task>
+    <task id="LOCAL-00011" summary="完善项目启动banner图描述信息">
+      <created>1586069610419</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1586069610419</updated>
+    </task>
+    <task id="LOCAL-00012" summary="添加react-admin前端代码">
+      <created>1586229372339</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1586229372340</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21293000" />
+    <option name="totallyTimeSpent" value="31465000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48941177" visible="true" weight="0.24205749" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48941177" visible="true" weight="0.24962178" />
       <window_info id="Structure" order="1" sideWeight="0.5105882" side_tool="true" weight="0.2818448" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -717,13 +463,13 @@
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50226927" side_tool="true" weight="0.3967213" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49848714" weight="0.3064771" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49848714" weight="0.30541873" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32890365" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49924356" weight="0.71100163" />
       <window_info anchor="bottom" id="Application Servers" order="14" sideWeight="0.49924356" weight="0.37914693" />
       <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.50378215" side_tool="true" weight="0.492635" />
-      <window_info anchor="bottom" x="22" y="256" width="1322" height="216" id="Run Dashboard" order="16" sideWeight="0.49621785" weight="0.48604268" />
+      <window_info anchor="bottom" x="22" y="256" width="1322" height="216" id="Run Dashboard" order="16" sideWeight="0.49621785" weight="0.4852459" />
       <window_info anchor="bottom" id="JRebel Executor" order="17" />
       <window_info anchor="bottom" id="Problems" order="18" weight="0.3289689" />
       <window_info anchor="bottom" id="SVN Properties" order="19" weight="0.3289689" />
@@ -755,6 +501,32 @@
       </list>
     </option>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -766,7 +538,12 @@
     <MESSAGE value="client添加账号密码授权认证" />
     <MESSAGE value="1、去除eureka自定义加密方式;&#10;2、修复security未登录直接访问BUG;&#10;3、添加http账户信息验证方式提供远程注册;&#10;4、给服务添加日志以及活动注册中心心跳配置。" />
     <MESSAGE value="1、完善produce2和ribbon注册日志配置信息;&#10;2、修改eureka以ip注册并且显示IP信息。" />
-    <option name="LAST_COMMIT_MESSAGE" value="1、完善produce2和ribbon注册日志配置信息;&#10;2、修改eureka以ip注册并且显示IP信息。" />
+    <MESSAGE value="删除idea项目配置文件" />
+    <MESSAGE value="添加ribbon服务端负载均衡策略路由代码" />
+    <MESSAGE value="完善zuul-sever路由服务" />
+    <MESSAGE value="完善项目启动banner图描述信息" />
+    <MESSAGE value="添加react-admin前端代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加react-admin前端代码" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
@@ -829,13 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-server/src/main/java/server/eureka/EurekaServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eureka-server/src/main/resources/logback-spring.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
@@ -847,14 +617,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-server/src/main/resources/banner.txt">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/eureka-server/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -877,60 +641,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zuul-server/src/main/java/com/zuul/server/ZuulServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuul-server/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/produce2-server/src/main/resources/logback-spring.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-353" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/produce1-server/src/main/java/com/sansan/server/user/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-server/src/main/java/server/eureka/config/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="29" column="5" selection-start-line="21" selection-start-column="4" selection-end-line="29" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/produce1-server/src/main/java/com/sansan/server/config/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/produce2-server/src/main/java/com/sansan/server/config/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/produce2-server/src/main/java/com/sansan/server/user/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -941,34 +660,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-server/src/main/resources/logback-spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logs/ribbon-server/ribbonServer.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-server/src/main/java/server/ribbon/config/WebSecurityConfig.java">
+    <entry file="file://$PROJECT_DIR$/produce1-server/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="323">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-server/src/main/java/server/ribbon/route/RouteTest.java">
+    <entry file="file://$PROJECT_DIR$/produce2-server/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="19" column="60" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="60" />
+        <state relative-caret-position="855">
+          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-server/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/ribbon-server/src/main/resources/logback-spring.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="19" selection-start-line="19" selection-end-line="20" selection-end-column="76" />
+        <state relative-caret-position="779">
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -979,38 +691,199 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/produce1-server/src/main/resources/application.properties">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/eureka/eureka-client/1.9.8/eureka-client-1.9.8.jar!/com/netflix/discovery/DiscoveryClient.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        <state relative-caret-position="-532">
+          <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/produce1-server/pom.xml">
+    <entry file="file://$PROJECT_DIR$/eureka-server/src/main/java/server/eureka/config/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="45" column="21" selection-start-line="42" selection-start-column="8" selection-end-line="45" selection-end-column="21" />
+        <state relative-caret-position="217">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/produce2-server/pom.xml">
+    <entry file="file://$PROJECT_DIR$/eureka-server/src/main/java/server/eureka/EurekaServerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+        <state relative-caret-position="152">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ribbon-server/pom.xml">
+    <entry file="file://$PROJECT_DIR$/produce2-server/src/main/java/com/sansan/server/user/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="66" column="61" selection-start-line="66" selection-start-column="61" selection-end-line="66" selection-end-column="61" />
+        <state relative-caret-position="190">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ribbon-server/src/main/java/server/ribbon/RibbonServerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        <state relative-caret-position="331">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#747#748#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-server/src/main/java/server/ribbon/route/RouteTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-server/src/main/java/server/ribbon/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="18" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produce1-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="45" column="21" selection-start-line="42" selection-start-column="8" selection-end-line="45" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul-server/src/main/java/com/zuul/server/ZuulServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul-server/src/main/java/com/zuul/server/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produce1-server/src/main/resources/banner.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produce2-server/src/main/resources/banner.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-server/src/main/resources/banner.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-server/src/main/resources/banner.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul-server/src/main/resources/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/yarn.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1102">
+          <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul-server/src/main/resources/banner.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produce1-server/src/main/java/com/sansan/server/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul-server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produce1-server/src/main/java/com/sansan/server/user/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="430">
+            <caret line="29" column="16" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -10,6 +10,8 @@
         <option value="$PROJECT_DIR$/produce2-server/pom.xml" />
         <option value="$PROJECT_DIR$/ribbon-server/pom.xml" />
         <option value="$PROJECT_DIR$/zuul-server/pom.xml" />
+        <option value="$PROJECT_DIR$/system-server/pom.xml" />
+        <option value="$PROJECT_DIR$/produce-server/pom.xml" />
       </list>
     </option>
   </component>

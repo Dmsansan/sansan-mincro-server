@@ -1,2 +1,2 @@
-2020-04-05 13:38:53.658  INFO 2664 --- [main] server.eureka.EurekaServerApplication    : No active profile set, falling back to default profiles: default
-2020-04-05 13:39:28.509  INFO 2664 --- [main] server.eureka.EurekaServerApplication    : Started EurekaServerApplication in 51.749 seconds (JVM running for 80.965)
+2020-04-10 13:44:39.251  INFO 8680 --- [main] server.eureka.EurekaServerApplication    : No active profile set, falling back to default profiles: default
+2020-04-10 13:44:58.424  INFO 8680 --- [main] server.eureka.EurekaServerApplication    : Started EurekaServerApplication in 33.228 seconds (JVM running for 54.696)

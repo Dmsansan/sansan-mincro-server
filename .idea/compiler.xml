@@ -8,9 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="config-server" />
         <module name="eureka-server" />
-        <module name="produce1-server" />
-        <module name="produce2-server" />
+        <module name="produce-server" />
         <module name="ribbon-server" />
+        <module name="system-server" />
         <module name="zuul-server" />
       </profile>
     </annotationProcessing>

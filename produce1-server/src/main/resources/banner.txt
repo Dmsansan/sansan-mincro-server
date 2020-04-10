@@ -12,3 +12,4 @@ Project-Description:
     java版本：${java.version}
     端口号：${server.port}
     日志记录文件：${logging.file}.log
+    数据库地址：${spring.datasource.url}

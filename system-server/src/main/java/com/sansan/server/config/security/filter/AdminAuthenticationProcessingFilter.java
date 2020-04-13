@@ -1,6 +1,5 @@
 package com.sansan.server.config.security.filter;
 
-import com.sansan.server.config.Constants;
 import com.sansan.server.config.security.CusAuthenticationManager;
 import com.sansan.server.config.security.login.AdminAuthenticationFailureHandler;
 import com.sansan.server.config.security.login.AdminAuthenticationSuccessHandler;
@@ -19,9 +18,6 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * <p> 自定义用户密码校验过滤器 </p>
  *
- * @author : zhengqing
- * @description :
- * @date : 2019/10/12 15:32
  */
 @Slf4j
 @Component

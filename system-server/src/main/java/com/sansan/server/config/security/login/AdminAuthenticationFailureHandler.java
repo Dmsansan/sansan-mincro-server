@@ -40,7 +40,7 @@ public class AdminAuthenticationFailureHandler implements AuthenticationFailureH
             log.error("登录失败：", e);
             result = "登录失败!";
         }
-        ResponseUtils.out(response, new ResponseEntity<>(result, HttpStatus.OK));
+        ResponseUtils.out(response, new ResponseEntity<>(result, HttpStatus.UNAUTHORIZED));
     }
 
 }

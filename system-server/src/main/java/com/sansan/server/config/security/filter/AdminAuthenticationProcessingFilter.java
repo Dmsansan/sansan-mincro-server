@@ -1,8 +1,12 @@
 package com.sansan.server.config.security.filter;
 
+import com.alibaba.fastjson.JSONObject;
+import com.sansan.server.config.Constants;
 import com.sansan.server.config.security.CusAuthenticationManager;
 import com.sansan.server.config.security.login.AdminAuthenticationFailureHandler;
 import com.sansan.server.config.security.login.AdminAuthenticationSuccessHandler;
+import com.sansan.server.user.domain.entity.MrUserInfo;
+import com.sansan.server.utils.MultiReadHttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.AuthenticationServiceException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -37,16 +41,16 @@ public class AdminAuthenticationProcessingFilter extends AbstractAuthenticationP
 
     @Override
     public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response) throws AuthenticationException {
-//        if (request.getContentType() == null || !request.getContentType().contains(Constants.REQUEST_HEADERS_CONTENT_TYPE)) {
-//            throw new AuthenticationServiceException("请求头类型不支持: " + request.getContentType());
-//        }
+        if (request.getContentType() == null || !request.getContentType().contains(Constants.REQUEST_HEADERS_CONTENT_TYPE)) {
+            throw new AuthenticationServiceException("请求头类型不支持: " + request.getContentType());
+        }
 
         UsernamePasswordAuthenticationToken authRequest;
         try {
-//            MultiReadHttpServletRequest wrappedRequest = new MultiReadHttpServletRequest(request);
-//            // 将前端传递的数据转换成jsonBean数据格式
-//            User user = JSONObject.parseObject(wrappedRequest.getBodyJsonStrByJson(wrappedRequest), User.class);
-            authRequest = new UsernamePasswordAuthenticationToken(request.getParameter("userName"), request.getParameter("passWord"), null);
+            MultiReadHttpServletRequest wrappedRequest = new MultiReadHttpServletRequest(request);
+            // 将前端传递的数据转换成jsonBean数据格式
+            MrUserInfo user = JSONObject.parseObject(wrappedRequest.getBodyJsonStrByJson(wrappedRequest), MrUserInfo.class);
+            authRequest = new UsernamePasswordAuthenticationToken(user.getUserName(), user.getPassWord(), null);
             authRequest.setDetails(authenticationDetailsSource.buildDetails(request));
         } catch (Exception e) {
             throw new AuthenticationServiceException(e.getMessage());

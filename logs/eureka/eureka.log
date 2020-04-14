@@ -1,2 +1,0 @@
-13:44:39.251 [main] INFO  s.eureka.EurekaServerApplication:646 - No active profile set, falling back to default profiles: default
-13:44:58.424 [main] INFO  s.eureka.EurekaServerApplication:59 - Started EurekaServerApplication in 33.228 seconds (JVM running for 54.696)

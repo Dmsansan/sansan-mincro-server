@@ -1,6 +1,9 @@
 package com.sansan.server.config.security;
 
+import com.netflix.discovery.converters.Auto;
 import com.sansan.server.config.security.filter.AdminAuthenticationProcessingFilter;
+import org.apache.ibatis.annotations.Update;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
@@ -29,6 +32,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         this.adminAuthenticationProcessingFilter = adminAuthenticationProcessingFilter;
     }
 
+    @Autowired
+    private CustomerLogoutSuccessHandler customerLogoutSuccessHandler;
+
     /**
      * 权限配置
      * @param http
@@ -53,7 +59,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         // 标识只能在 服务器本地ip[127.0.0.1或localhost] 访问`/home`接口，其他ip地址无法访问
         registry.antMatchers("/home").hasIpAddress("127.0.0.1");
         // 允许匿名的url - 可理解为放行接口 - 多个接口使用,分割
-        registry.antMatchers("/login", "/index").permitAll();
+        registry.antMatchers("/login", "/index", "/mrUser/logout").permitAll().and().logout().logoutSuccessHandler(customerLogoutSuccessHandler);
         // OPTIONS(选项)：查找适用于一个特定网址资源的通讯选择。 在不需执行具体的涉及数据传输的动作情况下， 允许客户端来确定与资源相关的选项以及 / 或者要求， 或是一个服务器的性能
         registry.antMatchers(HttpMethod.OPTIONS, "/**").denyAll();
         // 自动登录 - cookie储存方式

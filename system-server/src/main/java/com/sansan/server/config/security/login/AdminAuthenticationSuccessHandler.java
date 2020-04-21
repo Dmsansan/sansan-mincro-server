@@ -25,7 +25,7 @@ public class AdminAuthenticationSuccessHandler implements AuthenticationSuccessH
     public void onAuthenticationSuccess(HttpServletRequest httpServletRequest, HttpServletResponse response, Authentication auth) throws IOException, ServletException {
         MrUserInfo user = new MrUserInfo();
         SecurityUser securityUser = ((SecurityUser) auth.getPrincipal());
-//        user.setToken(securityUser.getCurrentUserInfo().getToken());
+        user.setToken(securityUser.getCurrentUserInfo().getToken());
         ResponseUtils.out(response, new ResponseEntity<MrUserInfo>(user, HttpStatus.OK));
     }
 

@@ -43,9 +43,9 @@ public class AdminAuthenticationProvider implements AuthenticationProvider {
         // 更新登录令牌 - 之后访问系统其它接口直接通过token认证用户权限...
         String token = PasswordUtils.encodePassword(System.currentTimeMillis() +"111", "111");
         MrUserInfo user = userMapper.selectById(userInfo.getCurrentUserInfo().getId());
-//        user.setToken(token);
+        user.setToken(token);
         userMapper.updateById(user);
-//        userInfo.getCurrentUserInfo().setToken(token);
+        userInfo.getCurrentUserInfo().setToken(token);
         return new UsernamePasswordAuthenticationToken(userInfo, password, userInfo.getAuthorities());
     }
 

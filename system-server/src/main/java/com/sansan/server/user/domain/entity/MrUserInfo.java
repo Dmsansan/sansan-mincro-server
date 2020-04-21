@@ -34,6 +34,8 @@ public class MrUserInfo extends Model<MrUserInfo> {
 
     private String passWord;
 
+    private String token;
+
     private LocalDateTime createTime;
 
     @TableLogic

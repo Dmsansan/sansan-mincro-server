@@ -6,6 +6,8 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.sansan.server.user.domain.entity.MrUserInfo;
 import com.sansan.server.user.service.MrUserInfoService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -24,6 +26,7 @@ import java.util.List;
  * @author siss
  * @since 2020-04-10
  */
+@Api(description = "用户接口")
 @RestController
 @RequestMapping("/mrUser")
 public class MrUserInfoController {
@@ -32,6 +35,7 @@ public class MrUserInfoController {
     private MrUserInfoService mrUserInfoService;
 
     @ResponseBody
+    @ApiOperation(value = "获取用户信息", notes = "根据ID获取单个用户信息")
     @RequestMapping(path = "/queryUserInfo", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<MrUserInfo> queryUserInfo(){
         MrUserInfo userInfo = mrUserInfoService.getById(1);
@@ -39,6 +43,7 @@ public class MrUserInfoController {
     }
 
     @ResponseBody
+    @ApiOperation(value = "获取用户列表", notes = "获取用户分页信息")
     @RequestMapping(path = "/queryUserInfoByPage", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<IPage<MrUserInfo>> queryUserInfoByPage(@RequestParam(value = "curPage") int curPage,
                                                                  @RequestParam(value = "pageNum") int pageNum,
@@ -58,6 +63,7 @@ public class MrUserInfoController {
     }
 
     @ResponseBody
+    @ApiOperation(value = "添加用户信息", notes = "单个用户添加")
     @RequestMapping(path = "/addUser", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> addUser(@RequestBody MrUserInfo mrUserInfo){
         ResponseEntity<?> responseEntity = null;

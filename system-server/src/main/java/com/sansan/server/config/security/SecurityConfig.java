@@ -1,8 +1,6 @@
 package com.sansan.server.config.security;
 
-import com.netflix.discovery.converters.Auto;
 import com.sansan.server.config.security.filter.AdminAuthenticationProcessingFilter;
-import org.apache.ibatis.annotations.Update;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -47,14 +45,19 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         // 禁用CSRF 开启跨域
         http.csrf().disable().cors();
 
-        // 登录处理 - 前后端一体的情况下
-//        registry.and().formLogin().loginPage("/login").defaultSuccessUrl("/").permitAll()
-//                // 自定义登陆用户名和密码属性名，默认为 username和password
-//                .usernameParameter("username").passwordParameter("password")
-//                // 异常处理
-//                .failureUrl("/login/error").permitAll()
-//                // 退出登录
-//                .and().logout().permitAll();
+        // swagger配置
+        registry.antMatchers("/api/v1/login").permitAll()
+                .antMatchers("/swagger*//**").permitAll()
+                //swagger api json
+                .antMatchers("/v2/api-docs",
+                        //用来获取支持的动作
+                        "/swagger-resources/configuration/ui",
+                        //用来获取api-docs的URL
+                        "/swagger-resources",
+                        //安全选择
+                        "/swagger-resources/configuration/security",
+                        "/swagger-ui.html"
+                ).permitAll();
 
         // 标识只能在 服务器本地ip[127.0.0.1或localhost] 访问`/home`接口，其他ip地址无法访问
         registry.antMatchers("/home").hasIpAddress("127.0.0.1");
@@ -66,6 +69,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         registry.and().rememberMe();
         // 其余所有请求都需要认证
         registry.anyRequest().authenticated();
+        // 不需要登录获取访问权限swagger 测试接口
+//        registry.anyRequest().permitAll();
         // 防止iframe 造成跨域
         registry.and().headers().frameOptions().disable();
 

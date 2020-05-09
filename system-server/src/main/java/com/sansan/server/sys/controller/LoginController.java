@@ -1,13 +1,12 @@
 package com.sansan.server.sys.controller;
 
+import com.sansan.server.user.domain.entity.MrUserInfo;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author siss
@@ -27,7 +26,7 @@ public class LoginController {
     @ResponseBody
     @ApiOperation(value = "登录系统", notes = "用户登录获取访问权限")
     @RequestMapping(value = "/login", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<String> login(){
+    public ResponseEntity<String> login(@RequestBody MrUserInfo userInfo){
         return new ResponseEntity<>("登陆成功", HttpStatus.OK);
     }
 }

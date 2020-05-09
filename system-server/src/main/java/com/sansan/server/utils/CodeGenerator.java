@@ -28,7 +28,7 @@ public class CodeGenerator {
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
 //        String projectPath = System.getProperty("user.dir");
-        String projectPath = "D:\\sansanservcie\\produce1-server";
+        String projectPath = "D:\\sansanservcie\\system-server";
         gc.setOutputDir(projectPath + "/src/main/java");
         // TODO 设置用户名
         gc.setAuthor("siss");

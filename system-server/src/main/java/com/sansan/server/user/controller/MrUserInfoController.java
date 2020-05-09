@@ -44,8 +44,12 @@ public class MrUserInfoController {
                                                                  @RequestParam(value = "pageNum") int pageNum,
                                                                  @RequestBody MrUserInfo mrUserInfo){
         QueryWrapper<MrUserInfo> queryWrapper = new QueryWrapper<>();
-        if(mrUserInfo.getUserCode()!=null)queryWrapper.like("user_code", mrUserInfo.getUserCode());
-        if(mrUserInfo.getUserName()!=null)queryWrapper.like("user_name",mrUserInfo.getUserName());
+        if(mrUserInfo.getUserCode()!=null) {
+            queryWrapper.like("user_code", mrUserInfo.getUserCode());
+        }
+        if(mrUserInfo.getUserName()!=null) {
+            queryWrapper.like("user_name",mrUserInfo.getUserName());
+        }
 
         Page<MrUserInfo> page = new Page<>(curPage, pageNum);
         IPage<MrUserInfo> result = mrUserInfoService.page(page, queryWrapper);

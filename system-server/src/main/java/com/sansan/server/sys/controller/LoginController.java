@@ -5,8 +5,9 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
+
+import java.security.Principal;
 
 /**
  * @author siss
@@ -28,5 +29,12 @@ public class LoginController {
     @RequestMapping(value = "/login", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> login(@RequestBody MrUserInfo userInfo){
         return new ResponseEntity<>("登陆成功", HttpStatus.OK);
+    }
+
+    @ResponseBody
+    @ApiOperation(value = "获取用户", notes = "获取用户信息")
+    @RequestMapping(value = "/oauth/user", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Principal> user(Principal principal){
+        return new ResponseEntity<>(principal, HttpStatus.OK);
     }
 }

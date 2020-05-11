@@ -9,7 +9,12 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ComponentScans;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.oauth2.provider.token.TokenStore;
 
+/**
+ * @author siss
+ * @date 2020/05/11
+ */
 @SpringBootApplication
 @EnableDiscoveryClient
 public class SystemServerApplication {

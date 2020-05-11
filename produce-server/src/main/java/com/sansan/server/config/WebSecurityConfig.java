@@ -16,11 +16,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.csrf().disable()
-                // 基于token，所以不需要session
-                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-                .and()
+        http.antMatcher("/**")
                 .authorizeRequests()
-                .anyRequest().authenticated();
+                .antMatchers("/", "/login**")
+                .permitAll()
+                .anyRequest()
+                .authenticated();
     }
 }

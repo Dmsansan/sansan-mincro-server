@@ -31,9 +31,9 @@ public class AuthServerConfig extends AuthorizationServerConfigurerAdapter {
                 .secret(passwordEncoder.encode("123")).resourceIds("user/getUserInfo")
                 .autoApprove(true)
                 .redirectUris("http://localhost:8067/login")
-                .scopes("all")
+                .scopes("get")
                 .accessTokenValiditySeconds(7200)
-                .authorizedGrantTypes("authorization_code","refresh_token");
+                .authorizedGrantTypes("password","refresh_token");
 
     }
 

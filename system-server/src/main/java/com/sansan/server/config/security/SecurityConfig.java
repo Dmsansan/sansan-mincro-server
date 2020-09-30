@@ -54,6 +54,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         "/swagger-resources/configuration/security",
                         "/swagger-ui.html"
                 ).permitAll();
+        registry.antMatchers("/actuator/**").permitAll();
         registry.antMatchers("/login", "/index", "/mrUser/logout").permitAll().and().logout().logoutSuccessHandler(customerLogoutSuccessHandler);
         registry.antMatchers(HttpMethod.OPTIONS, "/**").denyAll();
         registry.and().rememberMe();

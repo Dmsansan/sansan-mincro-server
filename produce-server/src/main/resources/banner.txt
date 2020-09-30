@@ -12,3 +12,4 @@ Project-Description:
     java版本：${java.version}
     端口号：${server.port}
     日志记录文件：${logging.file}.log
+    配置文件：application-${spring.profiles.active}.properties

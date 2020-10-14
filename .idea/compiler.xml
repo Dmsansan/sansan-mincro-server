@@ -10,6 +10,7 @@
         <module name="admin-server" />
         <module name="config-server" />
         <module name="eureka-server" />
+        <module name="produce-client" />
         <module name="produce-server" />
         <module name="ribbon-server" />
         <module name="system-server" />

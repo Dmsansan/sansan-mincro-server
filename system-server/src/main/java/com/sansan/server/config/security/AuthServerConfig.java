@@ -27,7 +27,7 @@ public class AuthServerConfig extends AuthorizationServerConfigurerAdapter {
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients.inMemory()
-                .withClient("produce-client")
+                .withClient("server-client")
                 .secret(passwordEncoder.encode("123")).resourceIds("user/getUserInfo")
                 .autoApprove(true)
                 .redirectUris("http://localhost:8067/login")

@@ -16,7 +16,7 @@ public class RouteTest {
 
     @RequestMapping(value = "/getUserInfo", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public String getUserInfo(){
-        String url = "http://produce-server/user/getUserInfo";
+        String url = "http://server-server/user/getUserInfo";
         String userInfo = restTemplate.getForObject(url, String.class);
         return userInfo;
     }

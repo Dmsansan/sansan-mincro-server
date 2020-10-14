@@ -29,7 +29,7 @@ public class SwaggerConfig {
     }
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("produce-server RESTful API")
+                .title("server-server RESTful API")
                 .contact(new Contact("siss", "https://github.com/Dmsansan/", "52404326@qq.com"))
                 .version("1.0")
                 .description("系统服务 RESTful API")

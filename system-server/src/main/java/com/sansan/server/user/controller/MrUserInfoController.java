@@ -4,6 +4,8 @@ package com.sansan.server.user.controller;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.sansan.server.client.ProduceFeignClient;
+import com.sansan.server.entity.ProduceInfoEntity;
 import com.sansan.server.user.domain.entity.MrUserInfo;
 import com.sansan.server.user.service.MrUserInfoService;
 import io.swagger.annotations.Api;
@@ -13,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
@@ -34,11 +37,17 @@ public class MrUserInfoController {
     @Autowired
     private MrUserInfoService mrUserInfoService;
 
+    @Autowired
+    private ProduceFeignClient produceFeignClient;
+
     @ResponseBody
     @ApiOperation(value = "获取用户信息", notes = "根据ID获取单个用户信息")
     @RequestMapping(path = "/queryUserInfo", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<MrUserInfo> queryUserInfo(){
         MrUserInfo userInfo = mrUserInfoService.getById(1);
+        ResponseEntity<ProduceInfoEntity> responseEntity = produceFeignClient.queryProduceInfoById();
+        String produceName = responseEntity.getBody().getProduceName();
+        System.out.println("feign 客户端获取的产品名称："+produceName);
         return new ResponseEntity<>(userInfo, HttpStatus.OK);
     }
 
@@ -63,6 +72,7 @@ public class MrUserInfoController {
     }
 
     @ResponseBody
+    @Transactional(rollbackFor = Exception.class)
     @ApiOperation(value = "添加用户信息", notes = "单个用户添加")
     @RequestMapping(path = "/addUser", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> addUser(@RequestBody MrUserInfo mrUserInfo){
@@ -84,11 +94,22 @@ public class MrUserInfoController {
         }
         mrUserInfo.setCreateTime(LocalDateTime.now());
         boolean save = mrUserInfoService.save(mrUserInfo);
-        if(save){
-            responseEntity = new ResponseEntity<>("用户添加成功", HttpStatus.OK);
-        }else {
+        if(!save){
             responseEntity = new ResponseEntity<>("用户添加失败", HttpStatus.INTERNAL_SERVER_ERROR);
+            return responseEntity;
         }
+
+        // 测试微服务间的数据库事务
+        ProduceInfoEntity produce = new ProduceInfoEntity();
+        produce.setProduceCode("TESTADD");
+        produce.setProduceName("智能手表");
+
+        ResponseEntity<String> produceRes = produceFeignClient.addProduceInfo(produce);
+
+        if (produceRes.getStatusCodeValue() == 0) {
+            System.out.println("产品信息添加成功");
+        }
+        responseEntity = new ResponseEntity<>("操作成功", HttpStatus.OK);
         return responseEntity;
     }
 }

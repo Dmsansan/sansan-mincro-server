@@ -4,17 +4,23 @@ package com.sansan.server.produce.controller;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.sansan.server.client.ProduceFeignClient;
+import com.sansan.server.entity.ProduceInfoEntity;
 import com.sansan.server.produce.domain.entity.MrProduceInfo;
 import com.sansan.server.produce.service.MrProduceInfoService;
 import io.swagger.annotations.ApiOperation;
-import jdk.nashorn.internal.ir.ReturnNode;
+import org.apache.commons.lang.SystemUtils;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
+import sun.plugin2.util.SystemUtil;
+
+import java.time.LocalDateTime;
+import java.util.Date;
 
 /**
  * <p>
@@ -26,16 +32,31 @@ import org.springframework.stereotype.Controller;
  */
 @Controller
 @RequestMapping("/produce")
-public class MrProduceInfoController {
+public class MrProduceInfoController implements ProduceFeignClient {
 
     @Autowired
     private MrProduceInfoService mrProduceInfoService;
 
+    @Override
     @ResponseBody
     @RequestMapping(value = "/queryProduceInfoById", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<MrProduceInfo> queryProduceInfoById(){
+    public ResponseEntity<ProduceInfoEntity> queryProduceInfoById(){
         MrProduceInfo mrProduceInfo = mrProduceInfoService.getById(18);
-        return new ResponseEntity<>(mrProduceInfo, HttpStatus.OK);
+        ProduceInfoEntity entity = new ProduceInfoEntity();
+        BeanUtils.copyProperties(mrProduceInfo, entity);
+        return new ResponseEntity<>(entity, HttpStatus.OK);
+    }
+
+    @Override
+    @ResponseBody
+    @RequestMapping(value = "/addProduceInfo", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> addProduceInfo(@RequestBody ProduceInfoEntity entity) {
+        MrProduceInfo produceInfo = new MrProduceInfo();
+        BeanUtils.copyProperties(entity, produceInfo);
+
+        produceInfo.setCreateTime(LocalDateTime.now());
+        boolean save = mrProduceInfoService.save(produceInfo);
+        return new ResponseEntity<>("新增成功", HttpStatus.OK);
     }
 
     @ResponseBody

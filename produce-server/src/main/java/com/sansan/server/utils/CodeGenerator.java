@@ -28,7 +28,7 @@ public class CodeGenerator {
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
 //        String projectPath = System.getProperty("user.dir");
-        String projectPath = "D:\\sansanservcie\\produce-server";
+        String projectPath = "D:\\sansanservcie\\server-server";
         gc.setOutputDir(projectPath + "/src/main/java");
         // TODO 设置用户名
         gc.setAuthor("siss");
@@ -61,7 +61,7 @@ public class CodeGenerator {
         // TODO 包配置
         PackageConfig pc = new PackageConfig();
         //pc.setModuleName(scanner("模块名"));
-        pc.setParent("com.sansan.server.produce");
+        pc.setParent("com.sansan.server.server");
         pc.setEntity("domain.entity");
         pc.setService("service");
         pc.setServiceImpl("service.impl");
